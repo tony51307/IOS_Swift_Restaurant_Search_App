@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		538B3E36247E8B5200D34328 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B3E35247E8B5200D34328 /* TableViewController.swift */; };
 		5398020B247BEF3100EE745E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398020A247BEF3100EE745E /* AppDelegate.swift */; };
-		5398020D247BEF3100EE745E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398020C247BEF3100EE745E /* ViewController.swift */; };
 		53980210247BEF3100EE745E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5398020E247BEF3100EE745E /* Main.storyboard */; };
 		53980212247BEF3300EE745E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53980211247BEF3300EE745E /* Assets.xcassets */; };
 		53980215247BEF3300EE745E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53980213247BEF3300EE745E /* LaunchScreen.storyboard */; };
 		53980220247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398021F247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineTests.swift */; };
 		5398022B247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398022A247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineUITests.swift */; };
+		5398023A247BEF9800EE745E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53980239247BEF9800EE745E /* CoreLocation.framework */; };
+		D85AC1B1247F4BC300EF5924 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85AC1B0247F4BC300EF5924 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		538B3E35247E8B5200D34328 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		53980207247BEF3100EE745E /* IOS_Swift_Spot_Recommend_Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Swift_Spot_Recommend_Machine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5398020A247BEF3100EE745E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5398020C247BEF3100EE745E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5398020F247BEF3100EE745E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53980211247BEF3300EE745E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53980214247BEF3300EE745E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		53980226247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_Swift_Spot_Recommend_MachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5398022A247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Swift_Spot_Recommend_MachineUITests.swift; sourceTree = "<group>"; };
 		5398022C247BEF3300EE745E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53980239247BEF9800EE745E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D85AC1B0247F4BC300EF5924 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5398023A247BEF9800EE745E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				5398021E247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineTests */,
 				53980229247BEF3300EE745E /* IOS_Swift_Spot_Recommend_MachineUITests */,
 				53980208247BEF3100EE745E /* Products */,
+				53980238247BEF9800EE745E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				5398020A247BEF3100EE745E /* AppDelegate.swift */,
-				5398020C247BEF3100EE745E /* ViewController.swift */,
 				5398020E247BEF3100EE745E /* Main.storyboard */,
+				538B3E35247E8B5200D34328 /* TableViewController.swift */,
 				53980211247BEF3300EE745E /* Assets.xcassets */,
 				53980213247BEF3300EE745E /* LaunchScreen.storyboard */,
 				53980216247BEF3300EE745E /* Info.plist */,
+				D85AC1B0247F4BC300EF5924 /* DetailViewController.swift */,
 			);
 			path = IOS_Swift_Spot_Recommend_Machine;
 			sourceTree = "<group>";
@@ -123,6 +130,14 @@
 				5398022C247BEF3300EE745E /* Info.plist */,
 			);
 			path = IOS_Swift_Spot_Recommend_MachineUITests;
+			sourceTree = "<group>";
+		};
+		53980238247BEF9800EE745E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53980239247BEF9800EE745E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5398020D247BEF3100EE745E /* ViewController.swift in Sources */,
+				D85AC1B1247F4BC300EF5924 /* DetailViewController.swift in Sources */,
+				538B3E36247E8B5200D34328 /* TableViewController.swift in Sources */,
 				5398020B247BEF3100EE745E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
